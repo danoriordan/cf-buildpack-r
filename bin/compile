@@ -86,6 +86,7 @@ mkdir -p $CACHE_DIR
 echo "Vendoring R $R_VERSION" | indent
 
 # download and unpack binaries
+echo "Buildpack for RStudio" | indent
 echo "Downloading and unpacking R binaries" | indent
 mkdir -p $VENDOR_DIR && mkdir -p /app/vendor
 curl $R_BINARIES -s -o r_binaries.tar.gz
